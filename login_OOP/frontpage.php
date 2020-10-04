@@ -13,5 +13,6 @@ if ($session->confirm_logged_in()) {
 </head>
 <body>
 <h1 align="center">Welcome to the backend <?php echo $_SESSION['user']; ?></h1>
+<p align="center"><a href="login.php?logout=1">Logout!</a> </p>
 </body>
 </html>
