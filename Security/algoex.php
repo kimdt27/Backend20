@@ -1,6 +1,7 @@
 <?php
 
 function hashPassword($password) {
+    //needs php 7.3
     $hp = password_hash($password, PASSWORD_ARGON2ID,
         ['memory_cost' => 1024<<8
             /*(default 1024, bitwise operator, multiplies by 2 twice)*/,
